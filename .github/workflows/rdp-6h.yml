@@ -347,13 +347,7 @@ jobs:
         shell: pwsh
         continue-on-error: true
         run: ./scripts/setup-samp-antiban.ps1
-
-      - name: Pasang Suite Game & Studio (Minecraft, Roblox, ETS 2, Blender, MEmu, FiveM)
-        if: ${{ !startsWith(inputs.runner || 'windows-2022', 'ubuntu') }}
-        shell: pwsh
-        continue-on-error: true
-        run: ./scripts/setup-games.ps1
-
+        
       - name: MuMu Player 12 (Android Emulator)
         timeout-minutes: 25
         if: ${{ !startsWith(inputs.runner || 'windows-2022', 'ubuntu') && (inputs.mumu || 'tidak') == 'ya' }}
