@@ -1,25 +1,25 @@
 {
   "active": true,
-  "hostname": "rdpfree-6",
+  "hostname": "rdpfree-9",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "ram_gb": 16.0,
+    "disk_free_gb": 80.1,
     "cpu_threads": 4,
-    "disk_free_gb": 80.3
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-08T11:04:17Z",
-  "expires_at": "2026-11-08T16:46:17Z",
+  "started_at": "2026-11-10T09:24:05Z",
+  "expires_at": "2026-11-10T15:06:05Z",
   "duration_menit": 342,
-  "run_id": "42446496323",
-  "run_attempt": "2",
-  "run_number": "6",
-  "run_url": "https://github.com/arkannayakarel-rgb/XyRDP/actions/runs/42446496323",
+  "run_id": "42790263339",
+  "run_attempt": "1",
+  "run_number": "9",
+  "run_url": "https://github.com/arkannayakarel-rgb/XyRDP/actions/runs/42790263339",
   "mode": "bersih+win10",
   "runtimes": {
     "mode": "cepat",
@@ -42,32 +42,6 @@
     "restored": true,
     "profile": "C:\\Users\\xyadmin"
   },
-  "fps_boost": {
-    "status": "ok",
-    "applied": [
-      "Power plan High Performance",
-      "RDP DWMFRAMEINTERVAL 15 (target 60 fps)",
-      "RDP: matikan wallpaper/full-drag saat remote",
-      "Game Mode + Game Bar auto",
-      "Matikan Xbox Game Bar capture (GameDVR) - hemat CPU saat game jalan",
-      "Hardware-Accelerated GPU Scheduling (jika didukung)",
-      "VisualFXSetting = best performance",
-      "Prioritas CPU/IO proses game"
-    ],
-    "skipped": [],
-    "applied_count": 8,
-    "elapsed_sec": 1.6,
-    "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-08T11:04:55.1324419Z"
-  },
-  "grafis": {
-    "adapters": "Microsoft Hyper-V Video",
-    "vulkan": "lavapipe 1.3 (CPU)",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "mode": "software",
-    "mesa": "26.2.6",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64"
-  },
   "extras": {
     "lightshot": "ok",
     "wallpaper": "ok",
@@ -78,42 +52,25 @@
   },
   "tools_hub": {
     "installed": true,
-    "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
-  },
-  "xydesk": {
-    "host": "ok",
-    "denyts": "ok",
-    "multisession": "ok",
-    "avc444": "ok (WDDM off + AVC software + DWMFRAMEINTERVAL=15 + TCPNoDelay=1)",
-    "fontsmoothing": "ok (ClearType profil Default)",
-    "audio_out": "ok (policy fDisableAudio=0, WinStations=0)",
-    "audio_mic": "ok (policy fDisableAudioCapture=0, WinStations=1) - mic HP redirect aktif, Allow di HP",
-    "wallpaper_rdp": "ok (policy fNoRemoteDesktopWallpaper=0) - wallpaper RDP tampil, cek client Experience->Wallpaper ON",
-    "firewall": "tcp3389=True udp3389=True udp4433=True",
-    "services": "ok",
-    "rdp_ready": "127.0.0.1 (handshake OK)",
-    "rdp_probe": "awal=True multi=True audio=True grafis=True clear=True fw=True svc=True",
-    "quic_udp4433": "dibuka di VM (tidak lewat tunnel TCP)",
-    "akses": "(menyusul)",
-    "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "auto_start": true
   },
   "akses": {
     "tunnel": {
-      "outside": "tailscale",
-      "status": "ok",
-      "host": "100.69.7.80",
-      "address": "100.69.7.80:3389",
       "port": 3389,
-      "selftest": "ok"
+      "address": "100.97.192.80:3389",
+      "outside": "tailscale",
+      "selftest": "ok",
+      "status": "ok",
+      "host": "100.97.192.80"
     },
     "mode": "tailscale",
     "tailscale": {
       "status": "ok",
-      "hostname": "rdpfree",
-      "ip": "100.69.7.80",
-      "magicdns": "rdpfree-1.tail1d940f.ts.net.",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "magicdns": "rdpfree-2.tail1d940f.ts.net.",
+      "ip": "100.97.192.80",
+      "hostname": "rdpfree"
     }
   }
 }
