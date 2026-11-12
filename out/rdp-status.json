@@ -5,19 +5,19 @@
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
     "ram_gb": 16.0,
-    "disk_free_gb": 77.4
+    "cpu_threads": 4,
+    "disk_free_gb": 77.2
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-11T09:51:11Z",
-  "expires_at": "2026-11-11T15:33:11Z",
+  "started_at": "2026-11-12T05:22:59Z",
+  "expires_at": "2026-11-12T11:04:59Z",
   "duration_menit": 342,
   "run_id": "42790263339",
-  "run_attempt": "2",
+  "run_attempt": "3",
   "run_number": "9",
   "run_url": "https://github.com/arkannayakarel-rgb/XyRDP/actions/runs/42790263339",
   "mode": "bersih+win10",
@@ -51,26 +51,26 @@
     "admin": true
   },
   "tools_hub": {
-    "installed": true,
     "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "installed": true
   },
   "akses": {
-    "tunnel": {
-      "outside": "tailscale",
-      "selftest": "ok",
-      "status": "ok",
-      "address": "100.97.255.113:3389",
-      "port": 3389,
-      "host": "100.97.255.113"
-    },
     "mode": "tailscale",
+    "tunnel": {
+      "host": "100.68.16.68",
+      "address": "100.68.16.68:3389",
+      "outside": "tailscale",
+      "port": 3389,
+      "selftest": "ok",
+      "status": "ok"
+    },
     "tailscale": {
-      "status": "ok",
-      "ip": "100.97.255.113",
-      "hostname": "rdpfree",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "rdpfree-3.tail1d940f.ts.net."
+      "status": "ok",
+      "hostname": "rdpfree",
+      "magicdns": "rdpfree-4.tail1d940f.ts.net.",
+      "ip": "100.68.16.68"
     }
   }
 }
