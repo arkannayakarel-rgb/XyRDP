@@ -5,19 +5,19 @@
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "ram_gb": 16.0,
     "cpu_threads": 4,
-    "disk_free_gb": 77.2
+    "disk_free_gb": 80.1,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-12T05:22:59Z",
-  "expires_at": "2026-11-12T11:04:59Z",
+  "started_at": "2026-11-12T11:20:43Z",
+  "expires_at": "2026-11-12T17:02:43Z",
   "duration_menit": 342,
   "run_id": "42790263339",
-  "run_attempt": "3",
+  "run_attempt": "4",
   "run_number": "9",
   "run_url": "https://github.com/arkannayakarel-rgb/XyRDP/actions/runs/42790263339",
   "mode": "bersih+win10",
@@ -37,10 +37,10 @@
     "vc2005x64": "dilewati (mode cepat)"
   },
   "persist": {
-    "source": "xyrdp-state.7z.enc",
     "restored": true,
-    "profile": "C:\\Users\\xyadmin",
-    "files": 470
+    "source": "xyrdp-state.7z.enc",
+    "files": 474,
+    "profile": "C:\\Users\\xyadmin"
   },
   "extras": {
     "lightshot": "ok",
@@ -51,26 +51,26 @@
     "admin": true
   },
   "tools_hub": {
+    "installed": true,
     "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "installed": true
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "akses": {
     "mode": "tailscale",
     "tunnel": {
-      "host": "100.68.16.68",
-      "address": "100.68.16.68:3389",
+      "status": "ok",
       "outside": "tailscale",
+      "host": "100.123.180.126",
       "port": 3389,
       "selftest": "ok",
-      "status": "ok"
+      "address": "100.123.180.126:3389"
     },
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok",
       "hostname": "rdpfree",
-      "magicdns": "rdpfree-4.tail1d940f.ts.net.",
-      "ip": "100.68.16.68"
+      "status": "ok",
+      "magicdns": "rdpfree.tail1d940f.ts.net.",
+      "ip": "100.123.180.126",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
     }
   }
 }
