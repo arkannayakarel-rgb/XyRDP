@@ -5,19 +5,19 @@
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 80.1,
-    "ram_gb": 16.0,
-    "cpu_threads": 4
+    "disk_free_gb": 79.2,
+    "cpu_threads": 4,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-13T17:18:22Z",
-  "expires_at": "2026-11-13T23:00:22Z",
+  "started_at": "2026-11-14T06:08:42Z",
+  "expires_at": "2026-11-14T11:50:42Z",
   "duration_menit": 342,
   "run_id": "43471319838",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "run_number": "15",
   "run_url": "https://github.com/arkannayakarel-rgb/XyRDP/actions/runs/43471319838",
   "mode": "bersih+win10",
@@ -37,18 +37,18 @@
     "vc2005x64": "dilewati (mode cepat)"
   },
   "persist": {
-    "source": "xyrdp-state.7z.enc",
     "files": 474,
-    "profile": "C:\\Users\\xyadmin",
-    "restored": true
+    "restored": true,
+    "source": "xyrdp-state.7z.enc",
+    "profile": "C:\\Users\\xyadmin"
   },
   "grafis": {
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
-    "mesa": "26.2.6",
     "mode": "software",
+    "vulkan": "lavapipe 1.3 (CPU)",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "adapters": "Microsoft Hyper-V Video",
-    "vulkan": "lavapipe 1.3 (CPU)"
+    "mesa": "26.2.6"
   },
   "extras": {
     "lightshot": "ok",
@@ -59,26 +59,26 @@
     "admin": true
   },
   "tools_hub": {
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "installed": true,
     "auto_start": true,
-    "installed": true
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "akses": {
-    "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "rdpfree-2.tail1d940f.ts.net.",
-      "hostname": "rdpfree",
+    "tunnel": {
+      "address": "100.66.231.5:3389",
+      "host": "100.66.231.5",
+      "selftest": "ok",
       "status": "ok",
-      "ip": "100.77.223.56"
+      "port": 3389,
+      "outside": "tailscale"
     },
     "mode": "tailscale",
-    "tunnel": {
-      "port": 3389,
-      "host": "100.77.223.56",
-      "address": "100.77.223.56:3389",
+    "tailscale": {
+      "magicdns": "rdpfree-3.tail1d940f.ts.net.",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "ip": "100.66.231.5",
       "status": "ok",
-      "selftest": "ok",
-      "outside": "tailscale"
+      "hostname": "rdpfree"
     }
   }
 }
